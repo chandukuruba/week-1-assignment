@@ -1,0 +1,153 @@
+/* Add your reset or normalize.css if needed */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+
+.product-page{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    flex-wrap: wrap;
+    padding: 10px 30px 30px 40px;
+}
+
+.cart-page >p{
+    text-align: center;
+    margin: 40px;
+}
+
+.cart-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    flex-wrap: wrap;
+    padding: 10px 30px 30px 40px;
+}
+
+hr{
+    width: 90%;
+    border: solid 1px ;
+    margin-bottom: 30px;
+}
+
+.product-page ~ h1{
+    text-align: center;
+}
+
+.add-button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.product-details-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-image{
+    width: 100%;
+    height: 70%;
+    margin-bottom: 30px;
+}
+
+.product-item {
+    width: 280px; /* Set a fixed width */
+    height: 350px; /* Set a fixed height */
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 10px;
+    background-color: #fff;
+    overflow: hidden; /* Ensure content does not overflow if it exceeds the fixed dimensions */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    justify-content: space-between;
+}
+
+.product-image img {
+    margin-bottom: 10px;
+    width: 90%;
+    height: calc(100% - 0.5rem);
+}
+
+.product-details p {
+    margin: 0;
+}
+
+
+/* Media query for laptop screens */
+@media only screen and (min-width: 768px) {
+    .product-item {
+        flex-direction: column; /* Display items in a row on laptops */
+    }
+
+    .product-item:nth-child(odd) {
+        margin-right: 10px; /* Add spacing between product cards in a row */
+    }
+}
+
+/* Media query for mobile screens */
+@media only screen and (max-width: 767px) {
+    .product-item {
+        margin-bottom: 20px; /* Add spacing between product cards in a column on mobile */
+    }
+}
+
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 60%;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.clear-button{
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Optional: Style the select arrow */
+
+
+/* Optional: Style the options in the select dropdown */
+select option {
+    background-color: #fff;
+    color: #333;
+}
